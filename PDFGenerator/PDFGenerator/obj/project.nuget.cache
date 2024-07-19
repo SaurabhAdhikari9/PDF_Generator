@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "SiKsD0d3i9BgRPJpviLFptTqpuuAxtQ+h9xPSFXWkATW8P3xeX3X0iENyerddfSKTQknV4ee30jc/vXMsG5VpA==",
+  "success": true,
+  "projectFilePath": "E:\\PDFGenerator\\PDFGenerator\\PDFGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SaurabhAdhikari\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\SaurabhAdhikari\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\SaurabhAdhikari\\.nuget\\packages\\questpdf\\2024.7.0\\questpdf.2024.7.0.nupkg.sha512",
+    "C:\\Users\\SaurabhAdhikari\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\SaurabhAdhikari\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\SaurabhAdhikari\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\SaurabhAdhikari\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
