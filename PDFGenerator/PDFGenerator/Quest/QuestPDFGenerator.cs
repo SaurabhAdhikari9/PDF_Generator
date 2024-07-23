@@ -2,6 +2,7 @@
 using QuestPDF.Fluent;
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
+using PDFGenerator.Helper.FontHelper;
 
 namespace PDFGenerator.Quest
 {
@@ -25,25 +26,26 @@ namespace PDFGenerator.Quest
                 page.PageColor(Colors.White);
                 page.DefaultTextStyle(p => p.FontSize(20));
                 page.PageHeader(custom.Header);
+                page.PageFooter(custom.Footer);
             });
         }
         private static void PageHeader(this PageDescriptor page, PageHeader customHeader)
         {
-            if (customHeader.Bold)
-            {
-                page.Header()
-                .Text(customHeader.Text)
-                .FontSize(customHeader.FontSize)
-                .Bold()
-                .FontColor(Color.FromHex(customHeader.ColorHex));
-                return;
-            }
             page.Header()
-            .Text(customHeader.Text)
-            .FontSize(customHeader.FontSize)
-            .FontColor(Color.FromHex(customHeader.ColorHex));
+                .Background(Color.FromHex(customHeader.ColorHex))
+                .Height(customHeader.Height)
+                .Text(customHeader.Text).FontSize(customHeader.FontSize).Style(FontHandler.Boldness(customHeader.Boldness));
 
 
+        }
+
+        public static void PageFooter(this PageDescriptor page, FooterDTO footer)
+        {
+            page.Footer()
+                .Background(Color.FromHex(footer.ColorHex))
+                .Text(footer.Text).Style(
+                    FontHandler.Boldness(footer.Boldness)
+                );
         }
     }
 }
